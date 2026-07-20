@@ -2,6 +2,44 @@
 @source "../src";
 @import "tw-animate-css";
 
+@theme {
+  --color-brand-primary: #8b4b58;
+  --color-brand-secondary: #3f655f;
+  --color-brand-tertiary: #655592;
+  --color-surface-warm: #f1e3d3;
+  --color-surface-container-warm: #eee0d0;
+  --color-surface-container-low: #fff2e3;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface-warm: #211b11;
+  --color-on-surface-variant-warm: #524345;
+  --color-outline-warm: #847375;
+  --color-outline-variant-warm: #d7c1c4;
+  --color-old-rose: #d88c9a;
+  --color-muted-teal: #99c1b9;
+  --color-soft-periwinkle: #8e7dbe;
+  --font-serif-display: "EB Garamond", serif;
+  --font-sans-label: "Manrope", sans-serif;
+}
+
+.paper-texture {
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 /*
