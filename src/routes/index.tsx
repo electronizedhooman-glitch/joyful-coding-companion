@@ -295,17 +295,28 @@ function Index() {
         </section>
 
         {/* Section 5: Contact */}
-        <section id="contact" className="py-32 px-5 md:px-16 bg-surface-warm relative overflow-hidden">
-          <div className="absolute top-20 left-1/4 opacity-10 text-soft-periwinkle">
-            <Icon name="star" className="text-8xl" />
+        <section
+          id="contact"
+          className="relative py-32 px-5 md:px-16 bg-old-rose text-white overflow-hidden"
+        >
+          <div className="absolute inset-0 opacity-20 pointer-events-none">
+            <div className="absolute top-10 left-10">
+              <Icon name="auto_awesome" className="text-4xl" />
+            </div>
+            <div className="absolute bottom-20 right-20">
+              <Icon name="spa" className="text-6xl" />
+            </div>
+            <div className="absolute top-1/2 left-1/4 opacity-30">
+              <Icon name="star" className="text-8xl" />
+            </div>
           </div>
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <div className="mb-16">
-              <Icon name="auto_awesome" className="text-old-rose text-6xl mb-6" />
-              <h2 className="font-serif-display text-4xl md:text-6xl mb-6 text-brand-primary font-bold">
+              <Icon name="auto_awesome" className="text-surface-warm text-6xl mb-6" />
+              <h2 className="font-serif-display text-4xl md:text-6xl mb-6 font-bold">
                 Let's Design <br /> the Future
               </h2>
-              <p className="font-serif-display text-xl text-on-surface-variant-warm max-w-xl mx-auto">
+              <p className="font-serif-display text-xl text-white/80 max-w-xl mx-auto">
                 Pick a door. I’m listening.
               </p>
             </div>
@@ -315,12 +326,12 @@ function Index() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative bg-surface-container-lowest border border-outline-variant-warm rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
+                className="group relative bg-white text-brand-primary rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
               >
                 <div className="w-14 h-14 rounded-full bg-old-rose/10 flex items-center justify-center text-old-rose group-hover:scale-110 transition-transform">
                   <Icon name="photo_camera" className="text-3xl" />
                 </div>
-                <span className="font-serif-display text-2xl text-brand-primary">Instagram</span>
+                <span className="font-serif-display text-2xl">Instagram</span>
                 <span className="font-sans-label text-[10px] uppercase tracking-widest text-on-surface-variant-warm/60 font-semibold">
                   @aurelius.livingworld
                 </span>
@@ -330,12 +341,12 @@ function Index() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative bg-surface-container-lowest border border-outline-variant-warm rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
+                className="group relative bg-white text-brand-primary rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
               >
                 <div className="w-14 h-14 rounded-full bg-muted-teal/10 flex items-center justify-center text-muted-teal group-hover:scale-110 transition-transform">
                   <Icon name="business_center" className="text-3xl" />
                 </div>
-                <span className="font-serif-display text-2xl text-brand-primary">LinkedIn</span>
+                <span className="font-serif-display text-2xl">LinkedIn</span>
                 <span className="font-sans-label text-[10px] uppercase tracking-widest text-on-surface-variant-warm/60 font-semibold">
                   /in/aurelius-vision
                 </span>
@@ -345,12 +356,12 @@ function Index() {
                 href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative bg-surface-container-lowest border border-outline-variant-warm rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
+                className="group relative bg-white text-brand-primary rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
               >
                 <div className="w-14 h-14 rounded-full bg-soft-periwinkle/10 flex items-center justify-center text-soft-periwinkle group-hover:scale-110 transition-transform">
                   <Icon name="chat_bubble" className="text-3xl" />
                 </div>
-                <span className="font-serif-display text-2xl text-brand-primary">Notes</span>
+                <span className="font-serif-display text-2xl">Notes</span>
                 <span className="font-sans-label text-[10px] uppercase tracking-widest text-on-surface-variant-warm/60 font-semibold">
                   @aurelius_notes
                 </span>
@@ -359,15 +370,15 @@ function Index() {
 
             <a
               href="mailto:hello@aurelius.livingworld"
-              className="inline-flex items-center gap-3 bg-old-rose text-white font-serif-display text-2xl px-10 py-4 rounded-full hover:scale-105 transition-all shadow-lg"
+              className="inline-flex items-center gap-3 bg-surface-warm text-brand-primary font-serif-display text-2xl px-10 py-4 rounded-full hover:scale-105 transition-all shadow-lg"
             >
               <Icon name="mail" />
               Mail Me
             </a>
 
             <div className="mt-24 flex flex-col items-center gap-4">
-              <p className="font-serif-display text-old-rose text-4xl italic">Aurelius</p>
-              <div className="flex gap-8 text-on-surface-variant-warm opacity-60 font-sans-label text-[10px] tracking-widest font-semibold">
+              <p className="font-serif-display text-white text-4xl italic">Aurelius</p>
+              <div className="flex gap-8 text-white/70 font-sans-label text-[10px] tracking-widest font-semibold">
                 <span>CREATIVE CATALYST</span>
                 <span>·</span>
                 <span>COMMUNITY BUILDER</span>
