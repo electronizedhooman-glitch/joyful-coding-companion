@@ -299,53 +299,78 @@ function Index() {
           <div className="absolute top-20 left-1/4 opacity-10 text-soft-periwinkle">
             <Icon name="star" className="text-8xl" />
           </div>
-          <div className="max-w-3xl mx-auto text-center relative z-10">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             <div className="mb-16">
-              <Icon name="edit_note" className="text-old-rose text-6xl mb-6" />
+              <Icon name="auto_awesome" className="text-old-rose text-6xl mb-6" />
               <h2 className="font-serif-display text-4xl md:text-6xl mb-6 text-brand-primary font-bold">
                 Let's Design <br /> the Future
               </h2>
               <p className="font-serif-display text-xl text-on-surface-variant-warm max-w-xl mx-auto">
-                Whether you have a seed of an idea or a full blueprint for change, I'd love to hear from you.
+                Pick a door. I’m listening.
               </p>
             </div>
-            <form className="flex flex-col gap-10 max-w-md mx-auto text-left" onSubmit={(e) => e.preventDefault()}>
-              <div className="group border-b border-outline-warm focus-within:border-old-rose transition-colors">
-                <label className="font-sans-label text-[10px] text-old-rose block mb-1 uppercase tracking-widest font-semibold">
-                  Name
-                </label>
-                <input
-                  className="w-full bg-transparent border-none p-0 pb-3 focus:outline-none focus:ring-0 font-serif-display text-2xl italic placeholder:opacity-30 text-brand-primary"
-                  placeholder="Your name..."
-                  type="text"
-                />
-              </div>
-              <div className="group border-b border-outline-warm focus-within:border-old-rose transition-colors">
-                <label className="font-sans-label text-[10px] text-old-rose block mb-1 uppercase tracking-widest font-semibold">
-                  Message
-                </label>
-                <textarea
-                  className="w-full bg-transparent border-none p-0 pb-3 focus:outline-none focus:ring-0 font-serif-display text-2xl italic placeholder:opacity-30 resize-none text-brand-primary"
-                  placeholder="What shall we create?"
-                  rows={2}
-                />
-              </div>
-              <div className="flex justify-center mt-6">
-                <button
-                  type="submit"
-                  className="bg-old-rose text-white font-serif-display text-2xl px-10 py-4 rounded-full hover:scale-105 transition-all shadow-lg flex items-center gap-3"
-                >
-                  Send Letter
-                  <Icon name="auto_awesome" />
-                </button>
-              </div>
-            </form>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-surface-container-lowest border border-outline-variant-warm rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
+              >
+                <div className="w-14 h-14 rounded-full bg-old-rose/10 flex items-center justify-center text-old-rose group-hover:scale-110 transition-transform">
+                  <Icon name="photo_camera" className="text-3xl" />
+                </div>
+                <span className="font-serif-display text-2xl text-brand-primary">Instagram</span>
+                <span className="font-sans-label text-[10px] uppercase tracking-widest text-on-surface-variant-warm/60 font-semibold">
+                  @aurelius.livingworld
+                </span>
+              </a>
+
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-surface-container-lowest border border-outline-variant-warm rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
+              >
+                <div className="w-14 h-14 rounded-full bg-muted-teal/10 flex items-center justify-center text-muted-teal group-hover:scale-110 transition-transform">
+                  <Icon name="business_center" className="text-3xl" />
+                </div>
+                <span className="font-serif-display text-2xl text-brand-primary">LinkedIn</span>
+                <span className="font-sans-label text-[10px] uppercase tracking-widest text-on-surface-variant-warm/60 font-semibold">
+                  /in/aurelius-vision
+                </span>
+              </a>
+
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-surface-container-lowest border border-outline-variant-warm rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
+              >
+                <div className="w-14 h-14 rounded-full bg-soft-periwinkle/10 flex items-center justify-center text-soft-periwinkle group-hover:scale-110 transition-transform">
+                  <Icon name="chat_bubble" className="text-3xl" />
+                </div>
+                <span className="font-serif-display text-2xl text-brand-primary">Notes</span>
+                <span className="font-sans-label text-[10px] uppercase tracking-widest text-on-surface-variant-warm/60 font-semibold">
+                  @aurelius_notes
+                </span>
+              </a>
+            </div>
+
+            <a
+              href="mailto:hello@aurelius.livingworld"
+              className="inline-flex items-center gap-3 bg-old-rose text-white font-serif-display text-2xl px-10 py-4 rounded-full hover:scale-105 transition-all shadow-lg"
+            >
+              <Icon name="mail" />
+              Mail Me
+            </a>
+
             <div className="mt-24 flex flex-col items-center gap-4">
               <p className="font-serif-display text-old-rose text-4xl italic">Aurelius</p>
               <div className="flex gap-8 text-on-surface-variant-warm opacity-60 font-sans-label text-[10px] tracking-widest font-semibold">
-                <a href="#" className="hover:text-old-rose transition-colors">INSTAGRAM</a>
-                <a href="#" className="hover:text-old-rose transition-colors">LINKEDIN</a>
-                <a href="#" className="hover:text-old-rose transition-colors">NOTES</a>
+                <span>CREATIVE CATALYST</span>
+                <span>·</span>
+                <span>COMMUNITY BUILDER</span>
               </div>
             </div>
           </div>
