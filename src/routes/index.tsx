@@ -39,7 +39,7 @@ function Index() {
             <a href="#gallery" className="text-on-surface-warm/80 font-sans-label text-sm tracking-widest font-semibold hover:text-old-rose transition-colors">
               Gallery
             </a>
-            <a
+            
               href="#contact"
               className="bg-old-rose text-white px-6 py-2 rounded-full font-sans-label text-sm tracking-widest font-semibold hover:bg-old-rose/90 hover:scale-105 active:scale-95 transition-all shadow-sm"
             >
@@ -125,29 +125,58 @@ function Index() {
             <div className="space-y-24">
               {[
                 {
-                  year: "2018 — FOUNDATION",
-                  title: "The Artistic Roots",
-                  body: "Founded a local collective focused on urban reforestation through street murals in abandoned boroughs. This was where visual storytelling first met radical activism.",
+                  year: "PARTNERSHIP IN EDUCATION",
+                  title: "Teacher",
+                  body: "Taught Maths, Science and Social Studies to classes of 30 students, two hours daily, to children from underprivileged backgrounds. Organized six annual events for 127 children alongside a team of 10 executives and 25 members, mentoring students to encourage curiosity and personal growth.",
                   dot: "bg-soft-periwinkle",
                   glow: "rgba(142,125,190,0.15)",
                   side: "left" as const,
+                  tag: "Education",
                 },
                 {
-                  year: "2021 — EXPANSION",
-                  title: "Leadership Pulse",
-                  body: "Scaled operations to direct impact initiatives across three continents. I coordinated with boutique brands to fund large-scale regenerative farming ecosystems in rural communities.",
+                  year: "SEDS NEPAL",
+                  title: "Public Relations Officer",
+                  body: "Supported the planning and execution of STEM outreach programs and events promoting space science and youth participation across diverse communities. Represented member perspectives and strengthened connections with students, volunteers and external stakeholders.",
                   dot: "bg-muted-teal",
                   glow: "rgba(153,193,185,0.15)",
                   side: "right" as const,
-                  tag: "Global Impact",
+                  tag: "STEM Outreach",
                 },
                 {
-                  year: "PRESENT — THE VISION",
-                  title: "Visionary Future",
-                  body: "Currently spearheading 'Living Architecture'—pioneering structural designs that integrate living biomass to improve air quality and community wellbeing in dense urban zones.",
+                  year: "SWARIT",
+                  title: "Co-Founder & Co-Chair",
+                  body: "Co-founded and led a 20-member executive team designing community service initiatives, outreach programs and awareness campaigns. Organized a winter clothing donation benefitting 60+ individuals and outreach visits to old age homes, and facilitated workshops for orphanages and schools on sustainability, gender empowerment and menstrual health.",
                   dot: "bg-old-rose",
                   glow: "rgba(216,140,154,0.15)",
                   side: "left" as const,
+                  tag: "Nonprofit Leadership",
+                },
+                {
+                  year: "DUKE OF EDINBURGH'S AWARD",
+                  title: "Silver Awardee & Subcommittee Coordinator",
+                  body: "Coordinated between DOE subcommittee members and the National Award Office to promote the program across Nepal, working to make participation accessible and meaningful for all. Completed Silver Award activities spanning community service, skill-building, physical fitness and personal development.",
+                  dot: "bg-soft-periwinkle",
+                  glow: "rgba(142,125,190,0.15)",
+                  side: "right" as const,
+                  tag: "Global Youth Program",
+                },
+                {
+                  year: "INCUBATE NEPAL",
+                  title: "Mentee",
+                  body: "Collaborated with students from across Nepal on an open-ended project under the guidance of mentors from MIT and Harvard. Conducted policy research, analysis and documentation to draft a government appeal, and planned field visits and surveys to gather primary data.",
+                  dot: "bg-muted-teal",
+                  glow: "rgba(153,193,185,0.15)",
+                  side: "left" as const,
+                  tag: "Policy Research",
+                },
+                {
+                  year: "CIVIC SPACE NEPAL",
+                  title: "Tarkashala Championship Adjudicator",
+                  body: "Adjudicated the open, semi-final and final rounds of the Tarkashala Championship, providing participants from across Nepal with clash analysis and constructive feedback. Attended a 3-day residential camp training in WSDC and BP debate formats.",
+                  dot: "bg-old-rose",
+                  glow: "rgba(216,140,154,0.15)",
+                  side: "right" as const,
+                  tag: "Debate & Advocacy",
                 },
               ].map((c, i) => (
                 <div key={i} className="relative flex flex-col md:flex-row items-center md:items-start gap-12">
@@ -315,12 +344,12 @@ function Index() {
                 Let's Design <br /> the Future
               </h2>
               <p className="font-serif-display text-xl text-white/80 max-w-xl mx-auto">
-                Pick a door. I’m listening.
+                Pick a door. I'm listening.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
-              <a
+              
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -335,7 +364,7 @@ function Index() {
                 </span>
               </a>
 
-              <a
+              
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -350,7 +379,7 @@ function Index() {
                 </span>
               </a>
 
-              <a
+              
                 href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -366,7 +395,7 @@ function Index() {
               </a>
             </div>
 
-            <a
+            
               href="mailto:hello@aurelius.livingworld"
               className="inline-flex items-center gap-3 bg-surface-warm text-brand-primary font-serif-display text-2xl px-10 py-4 rounded-full hover:scale-105 transition-all shadow-lg"
             >
