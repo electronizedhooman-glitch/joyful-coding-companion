@@ -39,7 +39,7 @@ function Index() {
             <a href="#gallery" className="text-on-surface-warm/80 font-sans-label text-sm tracking-widest font-semibold hover:text-old-rose transition-colors">
               Gallery
             </a>
-            <a
+            
               href="#contact"
               className="bg-old-rose text-white px-6 py-2 rounded-full font-sans-label text-sm tracking-widest font-semibold hover:bg-old-rose/90 hover:scale-105 active:scale-95 transition-all shadow-sm"
             >
@@ -121,8 +121,8 @@ function Index() {
                 The Journey So Far
               </h2>
             </div>
-
-            <div className="space-y-16">
+            <div className="absolute left-1/2 -translate-x-1/2 w-px h-[calc(100%-100px)] bg-outline-variant-warm/60 top-40 hidden md:block"></div>
+            <div className="space-y-24">
               {[
                 {
                   year: "PARTNERSHIP IN EDUCATION",
@@ -130,6 +130,7 @@ function Index() {
                   body: "Taught Maths, Science and Social Studies to classes of 30 students, two hours daily, to children from underprivileged backgrounds. Organized six annual events for 127 children alongside a team of 10 executives and 25 members, mentoring students to encourage curiosity and personal growth.",
                   dot: "bg-soft-periwinkle",
                   glow: "rgba(142,125,190,0.15)",
+                  side: "left" as const,
                   tag: "Education",
                 },
                 {
@@ -138,6 +139,7 @@ function Index() {
                   body: "Supported the planning and execution of STEM outreach programs and events promoting space science and youth participation across diverse communities. Represented member perspectives and strengthened connections with students, volunteers and external stakeholders.",
                   dot: "bg-muted-teal",
                   glow: "rgba(153,193,185,0.15)",
+                  side: "right" as const,
                   tag: "STEM Outreach",
                 },
                 {
@@ -146,6 +148,7 @@ function Index() {
                   body: "Co-founded and led a 20-member executive team designing community service initiatives, outreach programs and awareness campaigns. Organized a winter clothing donation benefitting 60+ individuals and outreach visits to old age homes, and facilitated workshops for orphanages and schools on sustainability, gender empowerment and menstrual health.",
                   dot: "bg-old-rose",
                   glow: "rgba(216,140,154,0.15)",
+                  side: "left" as const,
                   tag: "Nonprofit Leadership",
                 },
                 {
@@ -154,6 +157,7 @@ function Index() {
                   body: "Coordinated between DOE subcommittee members and the National Award Office to promote the program across Nepal, working to make participation accessible and meaningful for all. Completed Silver Award activities spanning community service, skill-building, physical fitness and personal development.",
                   dot: "bg-soft-periwinkle",
                   glow: "rgba(142,125,190,0.15)",
+                  side: "right" as const,
                   tag: "Global Youth Program",
                 },
                 {
@@ -162,6 +166,7 @@ function Index() {
                   body: "Collaborated with students from across Nepal on an open-ended project under the guidance of mentors from MIT and Harvard. Conducted policy research, analysis and documentation to draft a government appeal, and planned field visits and surveys to gather primary data.",
                   dot: "bg-muted-teal",
                   glow: "rgba(153,193,185,0.15)",
+                  side: "left" as const,
                   tag: "Policy Research",
                 },
                 {
@@ -170,30 +175,35 @@ function Index() {
                   body: "Adjudicated the open, semi-final and final rounds of the Tarkashala Championship, providing participants from across Nepal with clash analysis and constructive feedback. Attended a 3-day residential camp training in WSDC and BP debate formats.",
                   dot: "bg-old-rose",
                   glow: "rgba(216,140,154,0.15)",
+                  side: "right" as const,
                   tag: "Debate & Advocacy",
                 },
               ].map((c, i) => (
-                <div key={i} className="flex flex-col items-center text-center max-w-3xl mx-auto">
+                <div key={i} className="relative flex flex-col md:flex-row items-center md:items-start gap-12">
                   <div
-                    className={`w-4 h-4 rounded-full ${c.dot} mb-6`}
+                    className={`w-full max-w-2xl mx-auto text-center ${
+                      c.side === "left" ? "md:text-right md:pr-12" : "md:pl-12 md:ml-auto"
+                    }`}
+                  >
+                    <span className="font-sans-label text-brand-secondary text-xs tracking-widest font-semibold">
+                      {c.year}
+                    </span>
+                    <h3 className="font-serif-display text-brand-primary text-2xl mt-2 mb-4 font-medium">
+                      {c.title}
+                    </h3>
+                    <p className="font-serif-display text-lg text-on-surface-variant-warm">{c.body}</p>
+                    {c.tag && (
+                      <div className="mt-4 flex justify-center gap-2">
+                        <span className="bg-old-rose/10 px-3 py-1 rounded-full font-sans-label text-[10px] text-old-rose uppercase tracking-widest font-semibold">
+                          {c.tag}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div
+                    className={`absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full ${c.dot} z-10 hidden md:block mt-2`}
                     style={{ boxShadow: `0 0 0 8px ${c.glow}` }}
                   ></div>
-                  <span className="font-sans-label text-brand-secondary text-xs tracking-widest font-semibold">
-                    {c.year}
-                  </span>
-                  <h3 className="font-serif-display text-brand-primary text-2xl mt-2 mb-4 font-medium">
-                    {c.title}
-                  </h3>
-                  <p className="font-serif-display text-lg text-on-surface-variant-warm leading-relaxed">
-                    {c.body}
-                  </p>
-                  {c.tag && (
-                    <div className="mt-4 flex justify-center gap-2">
-                      <span className="bg-old-rose/10 px-3 py-1 rounded-full font-sans-label text-[10px] text-old-rose uppercase tracking-widest font-semibold">
-                        {c.tag}
-                      </span>
-                    </div>
-                  )}
                 </div>
               ))}
             </div>
@@ -220,14 +230,14 @@ function Index() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
               <div>
                 <h2 className="font-serif-display text-4xl md:text-6xl mb-8 leading-tight font-bold">
-                  The Difference <br /> Made with Intention
+                  Creating Meaningful Change <br /> Growing With Service
                 </h2>
                 <div className="grid grid-cols-2 gap-12">
                   {[
-                    ["14k+", "Lives Impacted"],
-                    ["42", "Projects Launched"],
-                    ["08", "Global Partnerships"],
-                    ["100%", "Intention Rate"],
+                    ["2.1k+", "Lives Impacted"],
+                    ["44+ ", "Events, Outreaches and Workshops Conducted"],
+                    ["08", "Organisations Involved"],
+                    ["400+", "Volunteering Hours"],
                   ].map(([n, l]) => (
                     <div key={l}>
                       <span className="block font-serif-display text-white text-6xl font-bold">{n}</span>
@@ -339,7 +349,7 @@ function Index() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
-              <a
+              
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -354,7 +364,7 @@ function Index() {
                 </span>
               </a>
 
-              <a
+              
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -369,7 +379,7 @@ function Index() {
                 </span>
               </a>
 
-              <a
+              
                 href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -385,7 +395,7 @@ function Index() {
               </a>
             </div>
 
-            <a
+            
               href="mailto:hello@aurelius.livingworld"
               className="inline-flex items-center gap-3 bg-surface-warm text-brand-primary font-serif-display text-2xl px-10 py-4 rounded-full hover:scale-105 transition-all shadow-lg"
             >
@@ -408,7 +418,7 @@ function Index() {
       <footer className="bg-surface-container-warm py-12 px-5 border-t border-outline-variant-warm/40 text-center">
         <p className="font-serif-display text-brand-primary text-2xl italic mb-4">Rhitika Phuyal</p>
         <p className="font-serif-display text-on-surface-variant-warm opacity-60 text-sm italic">
-          © Signed with intention, 2024. Handcrafted for impact.
+          © .
         </p>
       </footer>
     </div>
