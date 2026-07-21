@@ -27,17 +27,17 @@ function Index() {
       >
         <div className="flex justify-between items-center max-w-[1440px] mx-auto">
           <a href="#" className="font-serif-display text-brand-primary italic text-3xl md:text-5xl font-bold">
-            Living World
+            Rhitika Phuyal
           </a>
           <nav className="hidden md:flex gap-6 items-center">
             <a href="#journey" className="text-on-surface-warm/80 font-sans-label text-sm tracking-widest font-semibold hover:text-old-rose transition-colors">
-              Journey
+              Experience
             </a>
             <a href="#impact" className="text-on-surface-warm/80 font-sans-label text-sm tracking-widest font-semibold hover:text-old-rose transition-colors">
               Impact
             </a>
             <a href="#gallery" className="text-on-surface-warm/80 font-sans-label text-sm tracking-widest font-semibold hover:text-old-rose transition-colors">
-              Archive
+              Gallery
             </a>
             <a
               href="#contact"
@@ -68,19 +68,17 @@ function Index() {
           <div className="relative z-10 max-w-5xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div className="md:col-span-7 flex flex-col gap-8 order-2 md:order-1">
               <span className="font-sans-label text-brand-secondary tracking-[0.2em] uppercase text-sm font-semibold">
-                Creative Catalyst &amp; Community Builder
+                COMMUNITY BUILDER & CHANGEMAKAER
               </span>
               <div className="flex flex-col gap-4">
                 <h1 className="font-serif-display text-4xl md:text-7xl leading-tight text-old-rose font-bold tracking-tight">
-                  Hello, I'm Aurelius.
+                  Hello, I'm Rhitika.
                 </h1>
                 <p className="font-serif-display text-xl text-on-surface-variant-warm leading-relaxed">
-                  I believe in the power of radical community design to heal urban landscapes. My journey is one of
-                  blending high-end visual aesthetics with social utility—creating spaces that don't just look
-                  beautiful, but breathe and serve those who inhabit them.
+                  I have always been a girl driven by illimitable curiosity about the world and the people in it, which has long inclined me towards social impact. Gender equality, Environmental sustainability, child welfare, social inclusion, and social justice are the sectors which grab my attention and fuel my motivation to work towards impact in society. I recently completed my A levels from St. Xavier's College, Maitighar. Over the years, I have led and contributed to initiatives that combine community engagement, education and empowering the underrepresented voices believing that sustainable impact begins with empathy, collaboration and action. Amongst the rush and chaos of the world, i find my peace when I am expressing myself through various forms of art. Appreciating the art around me and indulging in the creation of art myself brings me much closer to myself, nature and keeps reminding me of the diverse perspectives that shape our world. At the end of the day, I find joy in every work I do. It challenges me, keeps me curious and reminds me why I chose this path in the first place.
                 </p>
                 <p className="font-serif-display text-lg text-on-surface-variant-warm italic">
-                  Based in the intersection of art and impact, I turn visions into regenerative realities.
+                  {"\n"}
                 </p>
               </div>
               <div className="flex flex-wrap gap-6 mt-4">
@@ -88,7 +86,7 @@ function Index() {
                   Explore Impact
                 </button>
                 <button className="relative font-sans-label text-sm tracking-widest font-semibold text-brand-secondary px-4 py-4 after:content-[''] after:absolute after:bottom-3 after:left-4 after:w-1/2 after:h-[2px] after:bg-old-rose/60">
-                  My Manifesto
+                  {"\n"}
                 </button>
               </div>
             </div>
@@ -117,10 +115,10 @@ function Index() {
           <div className="max-w-4xl mx-auto relative">
             <div className="mb-20 text-center">
               <span className="font-sans-label text-brand-secondary mb-2 block uppercase tracking-widest text-sm font-semibold">
-                The Chapters
+                EXPERIENCE
               </span>
               <h2 className="font-serif-display text-4xl md:text-5xl text-brand-primary font-semibold">
-                My Professional Evolution
+                The Journey So Far
               </h2>
             </div>
             <div className="absolute left-1/2 -translate-x-1/2 w-px h-[calc(100%-100px)] bg-outline-variant-warm/60 top-40 hidden md:block"></div>
@@ -373,15 +371,15 @@ function Index() {
               className="inline-flex items-center gap-3 bg-surface-warm text-brand-primary font-serif-display text-2xl px-10 py-4 rounded-full hover:scale-105 transition-all shadow-lg"
             >
               <Icon name="mail" />
-              Mail Me
+              {"\n"}Mail Me
             </a>
 
             <div className="mt-24 flex flex-col items-center gap-4">
-              <p className="font-serif-display text-white text-4xl italic">Aurelius</p>
+              <p className="font-serif-display text-white text-4xl italic">{"\n"}</p>
               <div className="flex gap-8 text-white/70 font-sans-label text-[10px] tracking-widest font-semibold">
-                <span>CREATIVE CATALYST</span>
-                <span>·</span>
-                <span>COMMUNITY BUILDER</span>
+                <span>{"\n"}</span>
+                <span>{"\n"}</span>
+                <span>{"\n"}</span>
               </div>
             </div>
           </div>
@@ -389,7 +387,7 @@ function Index() {
       </main>
 
       <footer className="bg-surface-container-warm py-12 px-5 border-t border-outline-variant-warm/40 text-center">
-        <p className="font-serif-display text-brand-primary text-2xl italic mb-4">Living World</p>
+        <p className="font-serif-display text-brand-primary text-2xl italic mb-4">Rhitika Phuyal</p>
         <p className="font-serif-display text-on-surface-variant-warm opacity-60 text-sm italic">
           © Signed with intention, 2024. Handcrafted for impact.
         </p>
