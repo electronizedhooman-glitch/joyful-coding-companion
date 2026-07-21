@@ -39,7 +39,7 @@ function Index() {
             <a href="#gallery" className="text-on-surface-warm/80 font-sans-label text-sm tracking-widest font-semibold hover:text-old-rose transition-colors">
               Gallery
             </a>
-            
+            <
               href="#contact"
               className="bg-old-rose text-white px-6 py-2 rounded-full font-sans-label text-sm tracking-widest font-semibold hover:bg-old-rose/90 hover:scale-105 active:scale-95 transition-all shadow-sm"
             >
