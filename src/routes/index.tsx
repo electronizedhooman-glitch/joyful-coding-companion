@@ -39,7 +39,7 @@ function Index() {
             <a href="#gallery" className="text-on-surface-warm/80 font-sans-label text-sm tracking-widest font-semibold hover:text-old-rose transition-colors">
               Gallery
             </a>
-            
+            <a
               href="#contact"
               className="bg-old-rose text-white px-6 py-2 rounded-full font-sans-label text-sm tracking-widest font-semibold hover:bg-old-rose/90 hover:scale-105 active:scale-95 transition-all shadow-sm"
             >
@@ -349,7 +349,7 @@ function Index() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
-              
+              <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -364,7 +364,7 @@ function Index() {
                 </span>
               </a>
 
-              
+              <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -379,7 +379,7 @@ function Index() {
                 </span>
               </a>
 
-              
+              <a
                 href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -395,7 +395,7 @@ function Index() {
               </a>
             </div>
 
-            
+            <a
               href="mailto:hello@aurelius.livingworld"
               className="inline-flex items-center gap-3 bg-surface-warm text-brand-primary font-serif-display text-2xl px-10 py-4 rounded-full hover:scale-105 transition-all shadow-lg"
             >
