@@ -384,7 +384,7 @@ function Index() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/rhitika.phuyal/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative bg-white text-brand-primary rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
@@ -394,12 +394,12 @@ function Index() {
                 </div>
                 <span className="font-serif-display text-2xl">Instagram</span>
                 <span className="font-sans-label text-[10px] uppercase tracking-widest text-on-surface-variant-warm/60 font-semibold">
-                  @aurelius.livingworld
+                  @rhitika.phuyal
                 </span>
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/rhitika-phuyal-4a648632b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative bg-white text-brand-primary rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
@@ -409,32 +409,32 @@ function Index() {
                 </div>
                 <span className="font-serif-display text-2xl">LinkedIn</span>
                 <span className="font-sans-label text-[10px] uppercase tracking-widest text-on-surface-variant-warm/60 font-semibold">
-                  /in/aurelius-vision
+                  /in/rhitika-phuyal
                 </span>
               </a>
 
               <a
-                href="https://x.com"
+                href="https://www.facebook.com/rhitika.phuyal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative bg-white text-brand-primary rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-md transition-all flex flex-col items-center gap-4"
               >
                 <div className="w-14 h-14 rounded-full bg-soft-periwinkle/10 flex items-center justify-center text-soft-periwinkle group-hover:scale-110 transition-transform">
-                  <Icon name="chat_bubble" className="text-3xl" />
+                  <Icon name="thumb_up" className="text-3xl" />
                 </div>
-                <span className="font-serif-display text-2xl">Notes</span>
+                <span className="font-serif-display text-2xl">Facebook</span>
                 <span className="font-sans-label text-[10px] uppercase tracking-widest text-on-surface-variant-warm/60 font-semibold">
-                  @aurelius_notes
+                  /rhitika.phuyal
                 </span>
               </a>
             </div>
 
             <a
-              href="mailto:hello@aurelius.livingworld"
+              href="mailto:024a123@sxc.edu.np"
               className="inline-flex items-center gap-3 bg-surface-warm text-brand-primary font-serif-display text-2xl px-10 py-4 rounded-full hover:scale-105 transition-all shadow-lg"
             >
               <Icon name="mail" />
-              {"\n"}Mail Me
+              Mail Me
             </a>
 
             <div className="mt-24 flex flex-col items-center gap-4">
