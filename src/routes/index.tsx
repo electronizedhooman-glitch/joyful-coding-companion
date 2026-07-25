@@ -98,7 +98,7 @@ function Index() {
                 <img
                   alt="Portrait of Rhitika"
                   className="w-full h-full object-cover rounded-lg shadow-lg border-4 border-white relative"
-                  src="https://lh3.googleusercontent.com/aida/AP1WRLs93q80IldvmDKnnTI37FLQD9cvV5ces9I3GnNP6w2d4xi1HAlB3K7QHAYvW2MfVYD6rQxPZIOeY6DD3b5XsvSrE-T43mikAeAk_cVZkzinbdzL8pRD2ILUMZuZ1M55Jx94V7lYtyFyBr9u5o6t352Ike8foPThfHtwRLBxbO2Vc2_zFCo3NC7HMW8SqKqYIAev3vj6XyWvAunuPPQmCqwiFNhUD0a5MpCx2aSka1ez-Ux-2tNi_IonhASK"
+                  src={rhitikaPhoto.url}
                 />
                 <div className="absolute -bottom-6 -left-6 text-muted-teal z-30">
                   <Icon name="filter_vintage" className="text-5xl" />
