@@ -95,7 +95,7 @@ function Index() {
                 <div className="absolute -top-3 -left-3 w-full h-full border-2 border-soft-periwinkle/30 rounded-lg -rotate-3"></div>
                 <div className="absolute -bottom-3 -right-3 w-full h-full bg-old-rose/10 rounded-lg rotate-3"></div>
                 <img
-                  alt="Portrait of Aurelius"
+                  alt="Portrait of Rhitika"
                   className="w-full h-full object-cover rounded-lg shadow-lg border-4 border-white relative"
                   src="https://lh3.googleusercontent.com/aida/AP1WRLs93q80IldvmDKnnTI37FLQD9cvV5ces9I3GnNP6w2d4xi1HAlB3K7QHAYvW2MfVYD6rQxPZIOeY6DD3b5XsvSrE-T43mikAeAk_cVZkzinbdzL8pRD2ILUMZuZ1M55Jx94V7lYtyFyBr9u5o6t352Ike8foPThfHtwRLBxbO2Vc2_zFCo3NC7HMW8SqKqYIAev3vj6XyWvAunuPPQmCqwiFNhUD0a5MpCx2aSka1ez-Ux-2tNi_IonhASK"
                 />
@@ -283,26 +283,72 @@ function Index() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  alt: "Workshop",
-                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuA9G9NO_Ic-nzWbx5aEKk2pGrSetHShrhtiwm1b_oxO2lg1LTY1hQUT65LEHxSxAciouY_SMP3gowpPh90NvEl0327tMSL2b8g7V_D0C4Ramjn3OoH8sT6XQcjDK6fmxHib53OrCacQoxUrjYVQisz06QVtR2ua_gZ9ZVbQ2YVHijIQzfbM2cw0S2fyAk3nRPw7Owc1RHclQK9_iPJ5NmTdNjL0JmDZpG3uf9pf0VSYoqyY0qILF0Lwew",
-                  caption: "Collaboration is our fuel.",
+                  alt: "Swarit",
+                  src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/swarit%20food.png",
+                  caption: "Swarit Food Donation",
                   rotate: "-rotate-1",
                   tape: "bg-muted-teal/40 rotate-2",
                 },
                 {
                   alt: "Speaking",
-                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCrcpNjNG9SecXThKeWipIxbBQAUqmDJN9QsE-iIMud52IELGv0HZ981MMZINseTSwvfRYrypDHMw8HW20I2qk3VONOTBlClYiFNVD7ooec6mNIjvVLzSTgobQrc0yVX_2WWxF_AavVihouI8x9l8T4I-Y-VOk5CKoODy7D4ttCwf4lE650uV_pAwI0Zmga_xZlyuaCVWVsp6Luwffg-skM2_1ZS6W8Km6a25M19PTOR_sA2c5ze672SQ",
-                  caption: "Sharing the vision.",
+                  src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/doe%20meeting%20at%20cleanliness%20hike.JPG",
+                  caption: "DOE sub-committee meeting at cleanliness hike",
                   rotate: "rotate-2",
                   tape: "bg-old-rose/40 -rotate-1",
                 },
                 {
                   alt: "Mural",
-                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB7lOMxOViqMHQnh4CJDnVGJkuUvQOwbnSRyeszjrrtvLqgKxIJvFiUPx2ep29Y29TaeoRz02KGRq6Q5qO2Y1FzgZX_O_JxOIymAW4icoHVlUrchuQUYhOawaflTLOkXBf8c4uGlj1J0oso6oQugubsvFpf4lkavydpQEB3iecqeNU8gMGlHUoIPVyJSOXWQ3OOTkhiWbN-78B0TSauW9XRqlwV90Dpk2yEwCloOy_Mh3bnU9L_EZfzAw",
-                  caption: "Transforming the grey into green.",
+                  src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/basantapur.jpg",
+                  caption: "Site Visit at Basantapur",
                   rotate: "-rotate-2",
                   tape: "bg-soft-periwinkle/40 rotate-3",
                 },
+                {
+                  alt: "Mural",
+                  src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/seds.jpg",
+                  caption: "Introducing SEDS on Cosmonautics Day Elocution Program",
+                  rotate: "-rotate-2",
+                  tape: "bg-soft-periwinkle/40 rotate-3",
+                },
+                {
+                  alt: "Mural",
+                  src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/csn2.jpg",
+                  caption: "Working at CSN",
+                  rotate: "-rotate-2",
+                  tape: "bg-soft-periwinkle/40 rotate-3",
+                },
+                {
+                  alt: "Mural",
+                  src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/pashupatinath.jpg",
+                  caption: "Site Visit at Pashupatinath",
+                  rotate: "-rotate-2",
+                  tape: "bg-soft-periwinkle/40 rotate-3",
+                },
+                {
+                  alt: "Mural",
+                  src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/pie%20picnic.png",
+                  caption: "Picnic of PIE Students",
+                  rotate: "-rotate-2",
+                  tape: "bg-soft-periwinkle/40 rotate-3",
+                },
+                {
+                  alt: "Mural",
+                  src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/peace%20swarit.png",
+                  caption: "Workshop on Peace",
+                  rotate: "-rotate-2",
+                  tape: "bg-soft-periwinkle/40 rotate-3",
+                },
+               {
+                  alt: "Mural",
+                  src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/tarkashala%20championship%20adjudicator.png",
+                  caption: "Adjudicating at Tarkashala Championship",
+                  rotate: "-rotate-2",
+                  tape: "bg-soft-periwinkle/40 rotate-3",
+                }
+          
+          
+          
+          
               ].map((c) => (
                 <div
                   key={c.alt}
@@ -341,11 +387,8 @@ function Index() {
             <div className="mb-16">
               <Icon name="auto_awesome" className="text-surface-warm text-6xl mb-6" />
               <h2 className="font-serif-display text-4xl md:text-6xl mb-6 font-bold">
-                Let's Design <br /> the Future
+                Let's Connect <br />
               </h2>
-              <p className="font-serif-display text-xl text-white/80 max-w-xl mx-auto">
-                Pick a door. I'm listening.
-              </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
