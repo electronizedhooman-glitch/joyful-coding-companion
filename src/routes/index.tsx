@@ -162,7 +162,7 @@ function Index() {
                 {
                   year: "CIVIC SPACE NEPAL",
                   title: "Program Intern",
-                  body: ,"Coordinated the planning and implementation of Tarkashala educational and civic engagement programmes, including workshops, debate tournaments, bootcamps, and school outreach initiatives. Collaborated with schools, trainers, volunteers, participants, and external stakeholders while managing programme operations, logistics, documentation, reporting, and communications. Served as a debate convener and adjudicator, facilitating debate tournaments, evaluating participants, and upholding competitive and educational standards across Tarkashala programmes."
+                  body: "Coordinated the planning and implementation of Tarkashala educational and civic engagement programmes, including workshops, debate tournaments, bootcamps, and school outreach initiatives. Collaborated with schools, trainers, volunteers, participants, and external stakeholders while managing programme operations, logistics, documentation, reporting, and communications. Served as a debate convener and adjudicator, facilitating debate tournaments, evaluating participants, and upholding competitive and educational standards across Tarkashala programmes."
                   dot: "bg-old-rose",
                   tag: "Debate & Advocacy",
                 },
