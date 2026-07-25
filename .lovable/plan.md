@@ -1,15 +1,15 @@
 ## Problem
 
-Preview crashes with:
-```
-SyntaxError: Expected corresponding JSX closing tag for <nav>. (47:12)
-```
+The dev server is failing with a JSX parse error at `src/routes/index.tsx:45`. The opening `<a` tag for the "Connect" nav button is missing — line 42 is blank where `<a` should be, leaving orphan attributes `href="#contact"` and `className="..."` followed by `>`.
 
-In `src/routes/index.tsx` around lines 42–47, the opening `<a` tag of the "Connect" nav link was deleted (likely during the GitHub edit). What remains is orphan JSX attributes with no element:
+This is the same corruption pattern as before (likely another GitHub-side edit stripped the tag opener).
+
+## Fix
+
+Restore the opening `<a` tag on line 42 of `src/routes/index.tsx`:
 
 ```tsx
-</a>
-
+<a
   href="#contact"
   className="bg-old-rose text-white px-6 py-2 rounded-full ..."
 >
@@ -17,24 +17,6 @@ In `src/routes/index.tsx` around lines 42–47, the opening `<a` tag of the "Con
 </a>
 ```
 
-The parser sees the closing `</a>` but no matching opener, so the whole route file fails to transform. Because `routeTree.gen.ts` imports every route, the SSR entry then throws on every request → the "preview not starting" 500.
-
-## Fix
-
-Restore the missing `<a` opener on line 42 so the block reads:
-
-```tsx
-<a
-  href="#contact"
-  className="bg-old-rose text-white px-6 py-2 rounded-full font-sans-label text-sm tracking-widest font-semibold hover:bg-old-rose/90 hover:scale-105 active:scale-95 transition-all shadow-sm"
->
-  Connect
-</a>
-```
+Then verify the preview recovers (flush HMR, check dev server logs are clean).
 
 No other changes.
-
-## Verify
-
-- Wait for Vite to re-transform `src/routes/index.tsx` — the transform error should disappear.
-- Reload the preview and confirm the page renders with the Connect button in the nav.
