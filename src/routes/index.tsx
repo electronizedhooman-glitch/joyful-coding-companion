@@ -162,11 +162,7 @@ function Index() {
                 {
                   year: "CIVIC SPACE NEPAL",
                   title: "Program Intern",
-                  bullets: [
-                    "Coordinated the planning and implementation of Tarkashala educational and civic engagement programmes, including workshops, debate tournaments, bootcamps, and school outreach initiatives.",
-                    "Collaborated with schools, trainers, volunteers, participants, and external stakeholders while managing programme operations, logistics, documentation, reporting, and communications.",
-                    "Served as a debate convener and adjudicator, facilitating debate tournaments, evaluating participants, and upholding competitive and educational standards across Tarkashala programmes.",
-                  ],
+                  body: ,"Coordinated the planning and implementation of Tarkashala educational and civic engagement programmes, including workshops, debate tournaments, bootcamps, and school outreach initiatives. Collaborated with schools, trainers, volunteers, participants, and external stakeholders while managing programme operations, logistics, documentation, reporting, and communications. Served as a debate convener and adjudicator, facilitating debate tournaments, evaluating participants, and upholding competitive and educational standards across Tarkashala programmes."
                   dot: "bg-old-rose",
                   tag: "Debate & Advocacy",
                 },
@@ -221,7 +217,7 @@ function Index() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
               <div>
                 <h2 className="font-serif-display text-4xl md:text-6xl mb-8 leading-tight font-bold">
-                  Creating Meaningful Change <br /> Growing With Service
+                  Creating Change <br /> Growing With Service
                 </h2>
                 <div className="grid grid-cols-2 gap-12">
                   {[
@@ -284,56 +280,56 @@ function Index() {
                   alt: "Speaking",
                   src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/doe%20meeting%20at%20cleanliness%20hike.JPG",
                   caption: "DOE sub-committee meeting at cleanliness hike",
-                  rotate: "rotate-2",
+                  rotate: "rotate-1",
                   tape: "bg-old-rose/40 -rotate-1",
                 },
                 {
                   alt: "Mural",
                   src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/basantapur.jpg",
                   caption: "Site Visit at Basantapur",
-                  rotate: "-rotate-2",
+                  rotate: "-rotate-1",
                   tape: "bg-soft-periwinkle/40 rotate-3",
                 },
                 {
                   alt: "Mural",
                   src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/seds.jpg",
                   caption: "Introducing SEDS on Cosmonautics Day Elocution Program",
-                  rotate: "-rotate-2",
+                  rotate: "-rotate-1",
                   tape: "bg-soft-periwinkle/40 rotate-3",
                 },
                 {
                   alt: "Mural",
                   src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/csn2.jpg",
                   caption: "Working at CSN",
-                  rotate: "-rotate-2",
+                  rotate: "-rotate-1",
                   tape: "bg-soft-periwinkle/40 rotate-3",
                 },
                 {
                   alt: "Mural",
                   src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/pashupatinath.jpg",
                   caption: "Site Visit at Pashupatinath",
-                  rotate: "-rotate-2",
+                  rotate: "-rotate-1",
                   tape: "bg-soft-periwinkle/40 rotate-3",
                 },
                 {
                   alt: "Mural",
                   src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/pie%20picnic.png",
                   caption: "Picnic of PIE Students",
-                  rotate: "-rotate-2",
+                  rotate: "-rotate-1",
                   tape: "bg-soft-periwinkle/40 rotate-3",
                 },
                 {
                   alt: "Mural",
                   src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/peace%20swarit.png",
                   caption: "Workshop on Peace",
-                  rotate: "-rotate-2",
+                  rotate: "-rotate-1",
                   tape: "bg-soft-periwinkle/40 rotate-3",
                 },
                {
                   alt: "Mural",
                   src: "https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/tarkashala%20championship%20adjudicator.png",
                   caption: "Adjudicating at Tarkashala Championship",
-                  rotate: "-rotate-2",
+                  rotate: "-rotate-1",
                   tape: "bg-soft-periwinkle/40 rotate-3",
                 }
           
