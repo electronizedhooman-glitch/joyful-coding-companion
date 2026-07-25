@@ -122,16 +122,13 @@ function Index() {
                 The Journey So Far
               </h2>
             </div>
-            <div className="absolute left-1/2 -translate-x-1/2 w-px h-[calc(100%-100px)] bg-outline-variant-warm/60 top-40 hidden md:block"></div>
-            <div className="space-y-24">
+            <div className="space-y-16">
               {[
                 {
                   year: "PARTNERSHIP IN EDUCATION",
                   title: "Teacher",
                   body: "Taught Maths, Science and Social Studies to classes of 30 students, two hours daily, to children from underprivileged backgrounds. Organized six annual events for 127 children alongside a team of 10 executives and 25 members, mentoring students to encourage curiosity and personal growth.",
                   dot: "bg-soft-periwinkle",
-                  glow: "rgba(142,125,190,0.15)",
-                  side: "left" as const,
                   tag: "Education",
                 },
                 {
@@ -139,8 +136,6 @@ function Index() {
                   title: "Public Relations Officer",
                   body: "Supported the planning and execution of STEM outreach programs and events promoting space science and youth participation across diverse communities. Represented member perspectives and strengthened connections with students, volunteers and external stakeholders.",
                   dot: "bg-muted-teal",
-                  glow: "rgba(153,193,185,0.15)",
-                  side: "right" as const,
                   tag: "STEM Outreach",
                 },
                 {
@@ -148,8 +143,6 @@ function Index() {
                   title: "Co-Founder & Co-Chair",
                   body: "Co-founded and led a 20-member executive team designing community service initiatives, outreach programs and awareness campaigns. Organized a winter clothing donation benefitting 60+ individuals and outreach visits to old age homes, and facilitated workshops for orphanages and schools on sustainability, gender empowerment and menstrual health.",
                   dot: "bg-old-rose",
-                  glow: "rgba(216,140,154,0.15)",
-                  side: "left" as const,
                   tag: "Nonprofit Leadership",
                 },
                 {
@@ -157,8 +150,6 @@ function Index() {
                   title: "Silver Awardee & Subcommittee Coordinator",
                   body: "Coordinated between DOE subcommittee members and the National Award Office to promote the program across Nepal, working to make participation accessible and meaningful for all. Completed Silver Award activities spanning community service, skill-building, physical fitness and personal development.",
                   dot: "bg-soft-periwinkle",
-                  glow: "rgba(142,125,190,0.15)",
-                  side: "right" as const,
                   tag: "Global Youth Program",
                 },
                 {
@@ -166,45 +157,44 @@ function Index() {
                   title: "Mentee",
                   body: "Collaborated with students from across Nepal on an open-ended project under the guidance of mentors from MIT and Harvard. Conducted policy research, analysis and documentation to draft a government appeal, and planned field visits and surveys to gather primary data.",
                   dot: "bg-muted-teal",
-                  glow: "rgba(153,193,185,0.15)",
-                  side: "left" as const,
                   tag: "Policy Research",
                 },
                 {
                   year: "CIVIC SPACE NEPAL",
-                  title: "Tarkashala Championship Adjudicator",
-                  body: "Adjudicated the open, semi-final and final rounds of the Tarkashala Championship, providing participants from across Nepal with clash analysis and constructive feedback. Attended a 3-day residential camp training in WSDC and BP debate formats.",
+                  title: "Program Intern",
+                  bullets: [
+                    "Coordinated the planning and implementation of Tarkashala educational and civic engagement programmes, including workshops, debate tournaments, bootcamps, and school outreach initiatives.",
+                    "Collaborated with schools, trainers, volunteers, participants, and external stakeholders while managing programme operations, logistics, documentation, reporting, and communications.",
+                    "Served as a debate convener and adjudicator, facilitating debate tournaments, evaluating participants, and upholding competitive and educational standards across Tarkashala programmes.",
+                  ],
                   dot: "bg-old-rose",
-                  glow: "rgba(216,140,154,0.15)",
-                  side: "right" as const,
                   tag: "Debate & Advocacy",
                 },
               ].map((c, i) => (
-                <div key={i} className="relative flex flex-col md:flex-row items-center md:items-start gap-12">
-                  <div
-                    className={`w-full max-w-2xl mx-auto text-center ${
-                      c.side === "left" ? "md:text-right md:pr-12" : "md:pl-12 md:ml-auto"
-                    }`}
-                  >
-                    <span className="font-sans-label text-brand-secondary text-xs tracking-widest font-semibold">
-                      {c.year}
-                    </span>
-                    <h3 className="font-serif-display text-brand-primary text-2xl mt-2 mb-4 font-medium">
-                      {c.title}
-                    </h3>
+                <div key={i} className="w-full max-w-2xl mx-auto text-center flex flex-col items-center">
+                  <div className={`w-3 h-3 rounded-full ${c.dot} mb-4`}></div>
+                  <span className="font-sans-label text-brand-secondary text-xs tracking-widest font-semibold">
+                    {c.year}
+                  </span>
+                  <h3 className="font-serif-display text-brand-primary text-2xl mt-2 mb-4 font-medium">
+                    {c.title}
+                  </h3>
+                  {c.bullets ? (
+                    <ul className="font-serif-display text-lg text-on-surface-variant-warm space-y-3 text-left list-disc list-outside pl-6 max-w-xl mx-auto">
+                      {c.bullets.map((b, j) => (
+                        <li key={j}>{b}</li>
+                      ))}
+                    </ul>
+                  ) : (
                     <p className="font-serif-display text-lg text-on-surface-variant-warm">{c.body}</p>
-                    {c.tag && (
-                      <div className="mt-4 flex justify-center gap-2">
-                        <span className="bg-old-rose/10 px-3 py-1 rounded-full font-sans-label text-[10px] text-old-rose uppercase tracking-widest font-semibold">
-                          {c.tag}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                  <div
-                    className={`absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full ${c.dot} z-10 hidden md:block mt-2`}
-                    style={{ boxShadow: `0 0 0 8px ${c.glow}` }}
-                  ></div>
+                  )}
+                  {c.tag && (
+                    <div className="mt-4 flex justify-center gap-2">
+                      <span className="bg-old-rose/10 px-3 py-1 rounded-full font-sans-label text-[10px] text-old-rose uppercase tracking-widest font-semibold">
+                        {c.tag}
+                      </span>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
