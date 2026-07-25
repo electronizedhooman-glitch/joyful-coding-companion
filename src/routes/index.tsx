@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import rhitikaPhoto from "../assets/rhitika_photo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
