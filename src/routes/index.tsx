@@ -162,7 +162,7 @@ function Index() {
                 {
                   year: "CIVIC SPACE NEPAL",
                   title: "Program Intern",
-                  body: "Coordinated the planning and implementation of Tarkashala educational and civic engagement programmes, including workshops, debate tournaments, bootcamps, and school outreach initiatives. Collaborated with schools, trainers, volunteers, participants, and external stakeholders while managing programme operations, logistics, documentation, reporting, and communications. Served as a debate convener and adjudicator, facilitating debate tournaments, evaluating participants, and upholding competitive and educational standards across Tarkashala programmes."
+                  body: "Coordinated the planning and implementation of Tarkashala educational and civic engagement programmes, including workshops, debate tournaments, bootcamps, and school outreach initiatives. Collaborated with schools, trainers, volunteers, participants, and external stakeholders while managing programme operations, logistics, documentation, reporting, and communications. Served as a debate convener and adjudicator, facilitating debate tournaments, evaluating participants, and upholding competitive and educational standards across Tarkashala programmes.",
                   dot: "bg-old-rose",
                   tag: "Debate & Advocacy",
                 },
@@ -175,15 +175,7 @@ function Index() {
                   <h3 className="font-serif-display text-brand-primary text-2xl mt-2 mb-4 font-medium">
                     {c.title}
                   </h3>
-                  {c.bullets ? (
-                    <ul className="font-serif-display text-lg text-on-surface-variant-warm space-y-3 text-left list-disc list-outside pl-6 max-w-xl mx-auto">
-                      {c.bullets.map((b, j) => (
-                        <li key={j}>{b}</li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="font-serif-display text-lg text-on-surface-variant-warm">{c.body}</p>
-                  )}
+                  <p className="font-serif-display text-lg text-on-surface-variant-warm">{c.body}</p>
                   {c.tag && (
                     <div className="mt-4 flex justify-center gap-2">
                       <span className="bg-old-rose/10 px-3 py-1 rounded-full font-sans-label text-[10px] text-old-rose uppercase tracking-widest font-semibold">
