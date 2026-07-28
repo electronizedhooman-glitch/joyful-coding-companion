@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import rhitikaPhoto from "../assets/rhitika_photo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -98,7 +97,7 @@ function Index() {
                 <img
                   alt="Portrait of Rhitika"
                   className="w-full h-full object-cover rounded-lg shadow-lg border-4 border-white relative"
-                  src={rhitikaPhoto.url}
+                  src="https://raw.githubusercontent.com/electronizedhooman-glitch/photu/refs/heads/main/rhitika%20photo.jpg"
                 />
                 <div className="absolute -bottom-6 -left-6 text-muted-teal z-30">
                   <Icon name="filter_vintage" className="text-5xl" />
